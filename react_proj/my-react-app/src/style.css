@@ -1,0 +1,381 @@
+/* NAVBAR */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: black solid 1px;
+    border-top: black solid 1px;
+  }
+  
+  div[class = 'navbar'] > div > div {
+    display: inline-block;
+    margin: 10px;
+  }
+  div[class = 'navbar'] > div {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  div[class = 'navbar'] > div a, div[class = 'navbar'] > div a:visited{
+    text-decoration: none;
+    color: black;
+  }
+
+  /* END NAVBAR */
+
+  /* FORMS */
+
+  .form-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cropped {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: block;
+    width: 150px;
+    border: black solid 1px;
+    border-radius: 40px;
+    box-shadow: 5px 10px 5px  #ccc
+  }
+
+  .format-form {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      row-gap: 0px;
+      align-content: center;
+      justify-content: center;
+      padding: 0;
+  }
+
+  .form-box {
+    border-radius: 10px 150px;
+    border: 2px solid gray;
+    background: white;
+    padding: 90px;
+    margin: 10vw
+  }
+
+  .form-input {
+    border: 2px solid slategrey
+  }
+
+  .form-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .skip, .skip:visited {
+    font-size: .75em;
+    color: black;
+    text-decoration: none;
+  }
+
+  .text-box {
+    width: 500px;
+    height: 200px
+  }
+
+  .dropzone-box {
+    width:350px;
+  }
+
+  #dropzone {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: dashed;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    outline: none;
+    transition: border .24s ease-in-out;
+  }
+
+  @keyframes colorChangeGood {
+    from {
+      border-color: #00e676
+    }
+    to {
+      border-color: #bdbdbd
+    }
+  }
+
+  @keyframes colorChangeBad {
+    from {
+      border-color: #ff1744
+    }
+    to {
+      border-color: #bdbdbd
+    }
+  }
+
+  .dropzone:hover {
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+  }
+  
+
+
+  /* END FORM */
+
+  /*  POSTS  */
+
+  .post-box {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+    border: rgb(100, 100, 100) solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .make-post {
+    display: grid;
+    grid-template-columns: auto 125px;
+    border-top: #cccccc solid 1px;
+    border-bottom: #cccccc solid 1px;
+  }
+
+  form[class = 'make-post'] > button {
+    width:100;
+    margin-left:30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    font-size: .8em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline:none
+  }
+
+  .post-profile-picture {
+    width: 60px;
+    border: white solid 1px;
+    border-radius: 15px;
+    margin-left: 0
+  }
+
+  .post-container {
+    all: unset;
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    padding:10px;
+    border-bottom: #cccccc solid 1px;
+  }
+
+  .post-name {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .post-name:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+  }
+
+  a {
+    cursor: pointer
+  }
+  
+  .post-text {
+    font-size: 0.9em;
+  }
+
+  .like {
+    display: inline-flex;
+    margin: 5px;
+    font-size: 0.9em;
+    color: rgb(141, 141, 141)
+  }
+
+  div[class = 'like'] > a:hover {
+    cursor: pointer;
+  }
+
+  /* END POSTS */
+
+  /* PROFILE */
+
+  .profile {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-left: #cccccc solid 1px;
+    border-right: #cccccc solid 1px;
+    border-bottom: #cccccc solid 1px;
+    height: 100%;
+  }
+
+  .banner {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 220px;
+    background-color: #ececec;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .name {
+    position: absolute;
+    bottom:40px;
+    left:0;
+    font-size: 1.7em;
+  }
+
+  .profile-picture {
+    display: block;
+    width: 200px;
+    border: white solid 2px;
+    border-radius: 40px;
+  }
+
+  .user-info {
+    text-align: center;
+    border-bottom: #cccccc solid 1px;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+  }
+
+  div[class = 'profile'] > h1 {
+    text-align: center;
+  }
+
+  .no-post {
+    text-align: center;
+    margin-top: 65px;
+    font-size: 1.5em;
+  }
+
+  .no-post1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: .9em;
+  }
+
+  .info-buttons {
+    position: absolute;
+    border: none;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none
+  }
+
+  .follow-button {
+    position: absolute;
+    border: none;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none
+  }
+
+  @keyframes button-on {
+    0% {
+      background-color:rgb(76, 175, 80)
+    }
+    50% {
+      background-color:rgb(101, 235, 106);
+    }
+    100% {
+      background-color:rgb(76, 175, 80);
+    }
+  }
+
+  @keyframes button-off {
+    0% {
+      background-color:rgb(76, 175, 80)
+    }
+    50% {
+      background-color:rgb(49, 119, 51);
+    }
+    100% {
+      background-color:rgb(76, 175, 80);
+    }
+  }
+
+
+
+  @media (max-width:655px) {
+
+    /* PROFILE */
+
+    .banner {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 270px auto;
+      background-color: #ececec;
+      padding: 30px;
+    }
+
+    .profile-picture {
+      display: block;
+      width: 200px;
+      border: white solid 2px;
+      border-radius: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .name {
+      width:100%;
+      text-align: center;
+      font-size: 1.7em;
+    }
+
+    .name-box {
+      padding-top:20px;
+      all:none;
+    }
+
+    /*  END PROFILE */
+
+    /*  POST STUFF */
+
+
+    /* END POST STUFF */
+
+  }
+
+  /* END PROFILE */
+
+  body {
+      font-size: 1.25em;
+      margin: 0;
+  }
+
+
+
+
+
+
